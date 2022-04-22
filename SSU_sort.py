@@ -7,7 +7,7 @@ import time
 
 
 files = glob.glob("./25mer_results/*.fasta")
-seqs = SeqIO.parse("DeansEndoPhytoSeqs.fasta", "fasta")
+seqs = SeqIO.parse("*.fasta", "fasta") #input fasta file of sequences here
 
 
 
