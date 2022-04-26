@@ -3,7 +3,7 @@ from Bio import SeqIO
 from Bio.SeqUtils import MeltingTemp as mt
 
 #making 25mers
-REFERENCE = "DeansEndoPhytoSeqs.fasta"
+REFERENCE = "*.fasta" #ribosomal subunits found from barnapp for example
 seqs = SeqIO.parse(REFERENCE, "fasta")
 for seq_record in seqs:
 	query_target=str(seq_record.id)
